@@ -1,5 +1,12 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+}
+
 group 'com.korena'
 version '1.0'
+
+
 
 apply plugin: 'java'
 
