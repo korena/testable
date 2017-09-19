@@ -23,10 +23,10 @@ public class RestService {
 
     @RequestMapping("/start")
     public String invokeOperationOnBoeing(){
-
+        int randomThingForMathMutationTests = 0;
         operations.operate(aircraft);
-
-        return "Operating Boeing";
+        randomThingForMathMutationTests++;
+        return "Operating Boeing " + randomThingForMathMutationTests;
     }
 
 }

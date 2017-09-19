@@ -4,23 +4,38 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import com.korena.testable.config.AircraftConfig;
+import com.korena.testable.config.MaintenanceConfig;
+import com.korena.testable.config.OperationsConfig;
 import com.korena.testable.model.Aircraft;
-import com.korena.testable.model.Boing_777;
 import java.time.Instant;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
 
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = {AircraftConfig.class, MaintenanceConfig.class, OperationsConfig.class})
+@ActiveProfiles({"dev"})
 public class MaintenanceTest {
 
-    private final Aircraft aircraft = new Boing_777("emirates", 200, 100);
-    private final  Maintenance maintenanceService = new Maintenance();
+    @Autowired
+    private  Aircraft aircraft;
+    @Autowired
+    private  Maintenance maintenanceService;
 
     @Test
     public void refuelMaxedOutTest(){
+        aircraft.setFuelLevel(100);
         assertEquals(100, maintenanceService.refuel(aircraft, 200));
     }
 
     @Test
     public void refuelSuccessTest(){
+        aircraft.setFuelLevel(100);
         assertEquals(200, maintenanceService.refuel(aircraft, 100));
     }
 
