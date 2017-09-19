@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Slf4j
-public class Maintenance {
+public class Maintenance implements MaintenanceService {
 
     public int refuel(Aircraft aircraft, int amount) {
         log.info("Aircraft " + aircraft.getName() + "is refueling to " + amount);
