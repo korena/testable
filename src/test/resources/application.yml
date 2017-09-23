@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: testable_for_strongtest
+aircraft:
+    name: Emirates
+    fuelLimit: 200
+    fuelLevel: 100
+    seatCount: 200
