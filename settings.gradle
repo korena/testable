@@ -1,2 +1,5 @@
 rootProject.name = 'testable'
+include ':airport'
+include ':aircraft'
+include ':service'
 

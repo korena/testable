@@ -1,9 +1,9 @@
 package com.korena.testable;
 
 
-import com.korena.testable.model.Aircraft;
+import com.korena.aircraft.model.Aircraft;
+import com.korena.service.MaintenanceService;
 import com.korena.testable.model.Boing_777;
-import com.korena.testable.service.MaintenanceService;
 
 public class Operations {
 

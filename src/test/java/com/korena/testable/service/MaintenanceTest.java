@@ -4,11 +4,11 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import com.korena.aircraft.model.Aircraft;
 import com.korena.testable.config.AircraftConfig;
 import com.korena.testable.config.MaintenanceConfig;
 import com.korena.testable.config.OperationsConfig;
 import com.korena.testable.config.props.AircraftProps;
-import com.korena.testable.model.Aircraft;
 import java.time.Instant;
 import org.junit.Test;
 import org.junit.runner.RunWith;

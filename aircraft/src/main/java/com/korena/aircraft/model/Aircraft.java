@@ -1,4 +1,4 @@
-package com.korena.testable.model;
+package com.korena.aircraft.model;
 
 import java.time.Instant;
 import lombok.Data;
@@ -14,27 +14,30 @@ public abstract class Aircraft {
     private int fuelCapacity = 300;
     private Instant lastMaintained = Instant.now();
 
-    Aircraft(String name, int seats_count, int fuel_level) {
+    public Aircraft(String name, int seats_count, int fuel_level) {
         this.name = name;
         this.seatsCount = seats_count;
         this.fuelLevel = fuel_level;
     }
 
-    public void takeoff() {
+    public String takeoff() {
         log.info(this.name + " is taking off");
+        return String.format("%s is taking off", this.name);
     }
 
-    public void land() {
-
+    public String land() {
         log.info(this.name + " is landing");
+        return String.format("%s is landing", this.name);
     }
 
-    public void taxi() {
+    public String taxi() {
         log.info(this.name + " is taxing");
+        return String.format("%s is taxiiiiinnngah", this.name);
     }
 
-    public void report() {
+    public String report() {
         log.info(this.name + " has " + this.seatsCount + "seats");
+        return this.name + " has " + this.seatsCount + "seats";
     }
 
 }

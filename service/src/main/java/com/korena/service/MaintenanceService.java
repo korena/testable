@@ -1,6 +1,6 @@
-package com.korena.testable.service;
+package com.korena.service;
 
-import com.korena.testable.model.Aircraft;
+import com.korena.aircraft.model.Aircraft;
 
 public interface MaintenanceService {
 

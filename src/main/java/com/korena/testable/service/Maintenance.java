@@ -1,6 +1,7 @@
 package com.korena.testable.service;
 
-import com.korena.testable.model.Aircraft;
+import com.korena.aircraft.model.Aircraft;
+import com.korena.service.MaintenanceService;
 import java.time.Instant;
 import lombok.extern.slf4j.Slf4j;
 

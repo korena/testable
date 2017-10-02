@@ -2,7 +2,7 @@ package com.korena.testable.controller;
 
 
 import com.korena.testable.Operations;
-import com.korena.testable.model.Aircraft;
+import com.korena.aircraft.model.Aircraft;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

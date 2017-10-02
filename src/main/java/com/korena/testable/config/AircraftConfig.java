@@ -2,7 +2,7 @@ package com.korena.testable.config;
 
 
 import com.korena.testable.config.props.AircraftProps;
-import com.korena.testable.model.Aircraft;
+import com.korena.aircraft.model.Aircraft;
 import com.korena.testable.model.Boing_777;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
